@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #DDF2FD;
+    overflow-x: hidden;
+}
+
+header .menu {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px 0 25px 20px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #000;
+    display: inline;
+    font-size: 18px;
+    transition: 0.5s;
+    padding-right: 50px;
+}
+
+header .menu a:hover {
+    color:  #DDF2FD;
+    cursor: pointer;
+}
+
+#call {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin: 50px 0 0 200px;
+}
+
+#call img {
+    width: 400px;
+    height: 400px;
+    margin-top: -100px;
+}
+
+#call .call-text h2 {
+    color: #fff;
+}
+
+
+#call .call-text p {
+    margin-bottom: 30px;
+    text-align: justify;
+} 
+
+#call .call-text a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 8px 5px 10px 5px;
+    border-radius: 2px;
+}
+
+#call .call-text a:hover {
+    color: #DDF2FD;
+    background-color: #fff;
+    box-shadow: 8px 5px 10px 5px rgb(201, 200, 200);
+}
+
+#about {
+    background-color: #fff;
+}
+
+#about ._about {
+    width: 1000px;
+    margin: 0 0 0 200px;
+    padding: 50px 0;
+}
+
+#about .col {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+#about .col h3 {
+    padding-right: 100px;
+   
+}
+
+#services {
+    width: 1000px;
+    margin: 50px 0 50px 200px;
+}
+
+#services ._services {
+    display: flex;
+    flex-direction: row;
+}
+
+#services ._services .service1 {
+    background-color: #fff;
+    width: 1300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 12px 10px #333;
+    padding: 40px 10px 0 10px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+#services ._services .service2 {
+    background-color: #fff;
+    width: 1300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 12px 10px #333;
+    padding: 40px 10px 0 10px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+#services ._services .service3 {
+    background-color: #fff;
+    width: 1300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 12px 10px #333;
+    padding: 40px 10px 0 20px;
+    text-align: center;
+}
+
+#services ._services i {
+    font-size: 40px;
+}
+
+#contact {
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+#contact ._contact {
+    width: 1000px;
+    margin: 0 0 0 200px;
+    padding: 50px 0;
+}
+
+form {
+    display: block;
+}
+
+input[type=text], input[type=email]  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    background-color: #DDF2FD;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 12px 10px 10px #333;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    border: 2px solid #DDF2FD;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    header .menu a {
+        padding-right: 20px;
+        font-size: 16px;
+    }
+    #call {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        margin: 30px 0 0 50px;
+        
+    }
+    #call .call-text h2 {
+        font-size: 20px;
+    }
+    #call .call-text p {
+        font-size: 15px;
+    }
+    #call img {
+        width: 300px;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+    #about ._about {
+        width: 250px;
+        margin: 50px 0 0 60px;
+        padding: 20px 0;
+    }
+    #about .col {
+        display: flex;
+        flex-direction: column;
+    }
+    #services {
+        width: 250px;
+        margin: 50px 0 0 70px;
+    }
+    
+    #services ._services {
+        display: flex;
+        flex-direction: column;
+    }
+    #services ._services .service1 {
+        width: 200px;
+        height: 300px;
+        margin-top: 30px;
+    }
+    #services ._services .service2 {
+        width: 200px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    #services ._services .service3 {
+        width: 200px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+    }
+    #contact ._contact {
+        width: 280px;
+        margin: 10px 0 0 70px;
+        padding: 50px 0;
+    }    
+    input[type=text], input[type=email]  {
+        width: 80%;
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
+
